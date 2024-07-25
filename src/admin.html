@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline'"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>сторінка адміна</title>
+  </head>
+  <body id="body">
+    <div class="wrapper">
+      <!-- шапка с инпутом для фильтрации продуктов в массиве -->
+      <header class="header">
+        <div class="header__container">
+          <div class="header__body">
+            <div class="header__sub-title">
+              <a href="user.html" class="adm">на сторінку покупця</a>
+              <!-- <a href="index-p.html" class="client">сторінка покупця</a> -->
+            </div>
+            <div class="header__title">
+              <h1>Овочі та фрукти</h1>
+            </div>
+
+            <div class="header__searh">
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Почніть вводити ключові слова, або ID товара"
+              />
+              <div type="button" class="search-btn">
+                <img src="img/search-icon.svg" alt="search" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- кнопка отрытия попапа чтобы добавлять продукты -->
+      <section class="btn-add">
+        <div class="btn-add__container">
+          <button class="btn-add__button" id="addProductButton">
+            <p>додати продукт</p>
+          </button>
+          <!-- <button class="btn-add__button" id="btn-left">
+            <p>додати на сторінку покупця</p>
+          </button> -->
+        </div>
+      </section>
+      <!-- это главный блок где будут выводиться карточки продуктов -->
+      <section class="main-item">
+        <div class="main-item__container" id="item-body">
+          <!-- тут динамически добавляю елементы карточек продуктов-->
+        </div>
+      </section>
+      <!-- popup для создания (добавления) карточек продуктов -->
+      <section class="popup popup-none" id="popup">
+        <div class="popup__container">
+          <!-- тут динамически добавляю елементы -->
+          <div class="popup__body">
+            <div class="popup__picture">
+              <label class="popup__pic">
+                <img src="img/photo-icon.png" alt="photo" id="uploaded-image" />
+                
+              </label>
+              <input
+                id="photo-input"
+                type="file"
+                accept="image/*"
+                style="display: none"
+              />
+            </div>
+
+            <div class="popup__info">
+              <div class="popup__content">
+                <div class="popup__block">
+                  <div class="popup__info">
+                    <label for="popup-id" class="popup__label"
+                      >ID продукта</label
+                    >
+                    <input
+                      id="popup-id"
+                      required
+                      autocomplete="off"
+                      type="text"
+                      name="popup-id"
+                      placeholder=""
+                      class="popup__input"
+                    />
+                  </div>
+                  <div class="popup__info">
+                    <label for="popup-name" class="popup__label">Назва</label>
+                    <input
+                      id="popup-name"
+                      required
+                      autocomplete="off"
+                      type="text"
+                      name="popup-name"
+                      placeholder=""
+                      class="popup__input"
+                    />
+                  </div>
+                </div>
+                <div class="popup__block">
+                  <div class="popup__info">
+                    <label for="popup-discont" class="popup__label"
+                      >Знижки %</label
+                    >
+                    <input
+                      id="popup-discont"
+                      required
+                      autocomplete="off"
+                      type="text"
+                      name="popup-discont"
+                      placeholder=""
+                      class="popup__input"
+                    />
+                  </div>
+                  <div class="popup__info">
+                    <label for="popup-price" class="popup__label"
+                      >Ціна грн/кг</label
+                    >
+                    <input
+                      id="popup-price"
+                      required
+                      autocomplete="off"
+                      type="text"
+                      name="popup-price"
+                      placeholder=""
+                      class="popup__input"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- кнопки динамически будут -->
+              <div id="btn-content">
+                <!-- <div class="btn-row">
+                                        <button class="btn green" type="button" onclick="createObj()">додати</button>
+                                        <button class="btn red" type="button" onclick="closePopup()">скасувати</button>
+                                    </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- попап с ошибками  -->
+      <section class="popup-warn popup-none" id="popup-warn">
+        <div class="popup-warn__container">
+          <!-- тут динамически тело алерта -->
+          <!-- <div class="popup-warn__body">
+                            <div class="popup-warn__elem">
+                                <h2>Увага!</h2>
+                                <p>Поле 'Знижки' повинно містити коректне число</p>
+                                <button>Ok</button>
+                            </div>
+                
+                
+                        </div> -->
+        </div>
+      </section>
+
+      <!-- експеримент с блоком для текста -->
+        <!-- <div class="div-input">
+            <input type="text" id="name-input" placeholder="Введить ім'я">
+            <input type="text" id="age-input" placeholder="Введить вік">
+        
+        </div> -->
+    
+    </div>
+
+    <script type="module" src="js/admin.js"></script>
+
+    <!-- <script type="module" src="js/obj.js"></script> -->
+  
+  </body>
+</html>

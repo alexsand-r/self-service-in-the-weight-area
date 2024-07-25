@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>сторінка покупця </title>
+</head>
+
+<body id="body">
+    <div class="wrapper">
+      
+        <!-- шапка странички покупателя -->
+        <section class="header-poc">
+            <div class="header-poc__container">
+                <div class="header-poc__body">
+                    <div class="header-poc__sub-title">
+
+
+                        <a href="admin.html" class="client">на сторінку адміна</a>
+
+                    </div>
+
+                    <!-- <div class="header__searh">
+                                            <input type="text" class="search-input" placeholder="Почніть вводити ключові слова, або ID товара">
+                                            <div type="button" class="search-btn">
+                                                <img src="img/search-icon.svg" alt="search">
+                                            </div>
+                                        </div> -->
+
+                </div>
+            </div>
+        </section>
+       
+        <!-- главный блок с монитором -->
+        <section class="page__main-window main-window">
+            <div class="main-window__container">
+                <div class="main-window__body">
+                    <div class="main-window__block">
+                        <div class="main-window__box">
+
+                            <!-- тут динамически -->
+
+                            <!-- <div class="picture">
+                                        <div class="pic">
+                                            <img src="img/бананы.jpg" alt="photo">
+                                            <div class="info">
+                                                <span>01</span>
+                                                <p>title title title title title title title title title </p>
+                                            </div>
+                                        </div>
+                                    </div> -->
+
+                        </div>
+
+
+                        <div class="main-window__info">
+                            <div class="main-window__row">
+                                <label for="product-weight" class="main-window__label">Введіть вагу</label>
+                                <input id="product-weight" required autocomplete="off" type="text" name="product-weight"
+                                    placeholder="Вагу вводити у граммах )))" class="main-window__input">
+                            </div>
+                            <div class="main-window__row">
+                                <div class="main-window__block-price">
+                                    <div class="main-window__item">
+                                        <p>Ціна продукту ГРН</p>
+                                        <div class="main-window__row-div" id="product-price"></div>
+                                    </div>
+                                    <div class="main-window__item">
+                                        <p>Знижки %</p>
+                                        <div class="main-window__row-div" id="discont-price"></div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="main-window__row">
+                                <p>Вартість продукту грн.</p>
+                                <div class="main-window__row-div" id="total-price"></div>
+                            </div>
+                        </div>
+                        <div class="main-window__calc">
+                            <button type="button" class="btn-btn" value="1">1</button>
+                            <button type="button" class="btn-btn" value="2">2</button>
+                            <button type="button" class="btn-btn" value="3">3</button>
+                            <button type="button" class="btn-btn" value="4">4</button>
+                            <button type="button" class="btn-btn" value="5">5</button>
+                            <button type="button" class="btn-btn" value="6">6</button>
+                            <button type="button" class="btn-btn" value="7">7</button>
+                            <button type="button" class="btn-btn" value="8">8</button>
+                            <button type="button" class="btn-btn" value="9">9</button>
+                            <button type="button" class="btn-btn zero-btn" value="0">0</button>
+                            <button id="del-btn" type="button" class="del-btn">dell</button>
+                        </div>
+                    </div>
+                    <div class="prev-next">
+                        <button id="prev">Prev</button>
+                        <button id="next">Next</button>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+        <!-- блок с чеком -->
+        <section class="page__check check">
+            <div class="check__container">
+                <div class="check__body">
+                    <div class="check__block">
+
+                        <div class="check__content">
+                            <div class="check__list item-check-list " id="itemCheckList">
+                                <div class="item-check-list__item">
+                                    <label for="check-product" class="item-check-list__label">Продукт</label>
+                                    <div id="check-product" required autocomplete="off" class="item-check-list__input">
+                                    </div>
+                                </div>
+                                <div class="item-check-list__item">
+                                    <label for="check-price" class="item-check-list__label">Ціна грн</label>
+                                    <div id="check-price" class="item-check-list__input">
+                                    </div>
+                                </div>
+                                <div class="item-check-list__item">
+                                    <label for="check-discont" class="item-check-list__label">Знижка %</label>
+                                    <div id="check-discont" class="item-check-list__input">
+                                    </div>
+                                </div>
+                                <div class="item-check-list__item">
+                                    <label for="check-total" class="item-check-list__label">Вартість грн</label>
+                                    <div id="check-total" class="item-check-list__input">
+                                    </div>
+                                </div>
+                                <p>Дякуємо за покупку !</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check__button">
+                        <button type="button" class="check__btn">роздрукувати чек</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <div id="block-text-container">
+            это блок block-text-container
+            <div id="block-text">
+                гггг ололо ррор
+            </div>
+        </div> -->
+       
+
+      
+
+
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script src="js/swiper.js"></script>
+    
+   
+    <script type="module" src="js/user.js"></script>
+
+
+ 
+
+
+</body>
+
+</html>
