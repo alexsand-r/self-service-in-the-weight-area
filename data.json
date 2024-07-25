@@ -1,0 +1,98 @@
+[
+  {
+    "uniqId": 0,
+    "id": "01",
+    "name": "Банани перший гатунок",
+    "discont": "10",
+    "price": "26.36",
+    "photo": "img/banan.jpg"
+  },
+  {
+    "uniqId": 1,
+    "id": "02",
+    "name": "Помідор червоний",
+    "discont": "0",
+    "price": "12.06",
+    "photo": "img/Pomidor-krasniy.jpg"
+  },
+  {
+    "uniqId": 2,
+    "id": "03",
+    "name": "Слива",
+    "discont": "12",
+    "price": "28.36",
+    "photo": "img/слива.webp"
+  },
+  {
+    "uniqId": 3,
+    "id": "04",
+    "name": "Персик",
+    "discont": "8",
+    "price": 126.63,
+    "photo": "file:///C:/Users/home/project/EL-%D0%A2%D0%9E%D0%A0%D0%93%D0%9E%D0%92%D0%90%20%D0%9C%D0%90%D0%A0%D0%9A%D0%90/src/img/%D0%BF%D0%B5%D1%80%D1%81%D0%B8%D0%BA.jpg"
+  },
+  {
+    "uniqId": 4,
+    "id": "05",
+    "name": "Ананас",
+    "discont": "0",
+    "price": 99.99,
+    "photo": "img/ананас.jpeg"
+  },
+  {
+    "uniqId": 5,
+    "id": "06",
+    "name": "Цибуля \"Аристократичний шалот\"",
+    "discont": 0,
+    "price": 75.59,
+    "photo": "img/цибуля.jpg"
+  },
+  {
+    "uniqId": 6,
+    "id": "07",
+    "name": "Ківі",
+    "discont": "12",
+    "price": "45.80",
+    "photo": "img/киви.jpg"
+  },
+  {
+    "uniqId": 7,
+    "id": "08",
+    "name": "Обрикос",
+    "discont": "6",
+    "price": "125.30",
+    "photo": "img/обрикос.jpg"
+  },
+  {
+    "uniqId": 8,
+    "id": "09",
+    "name": "Картопля молода мита",
+    "discont": "0",
+    "price": "36.00",
+    "photo": "img/картошка.jpg"
+  },
+  {
+    "uniqId": 9,
+    "id": "10",
+    "name": "Малина",
+    "discont": "0",
+    "price": "210.31",
+    "photo": "img/малина.avif"
+  },
+  {
+    "uniqId": 10,
+    "id": "11",
+    "name": "Ожина",
+    "discont": "0",
+    "price": "102.36",
+    "photo": "img/ежевика.jpg"
+  },
+  {
+    "uniqId": 11,
+    "id": "12",
+    "name": "Кавун",
+    "discont": "0",
+    "price": "103.03",
+    "photo": "img/кавуг.jpg"
+  }
+]
